@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaLinkedin, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import emailjs from "emailjs-com";
 
 import { styles } from "../styles";
@@ -60,7 +60,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
+        <p className={styles.sectionSubText}>Get in touch & Hire me</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
@@ -106,15 +106,22 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="flex gap-4 mt-8">
+        <div className="flex gap-4 mt-8 text-center">
+          
           <a href="https://twitter.com/sairam12312" target="_blank" rel="noopener noreferrer">
-            <FaTwitter className="text-white text-2xl" />
+            <FaTwitter className="text-white text-2xl m-2" />
           </a>
           <a href="https://github.com/Lakkireddygarisai" target="_blank" rel="noopener noreferrer">
-            <FaGithub className="text-white text-2xl" />
+            <FaGithub className="text-white text-2xl m-2" />
           </a>
           <a href="https://www.linkedin.com/in/sairam-lakkireddy/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin className="text-white text-2xl" />
+            <FaLinkedin className="text-white text-2xl m-2" />
+          </a>
+          <a href="mailto:sairamsairamvivek@gmail.com">
+            <FaEnvelope className="text-white text-2xl m-2" />
+          </a>
+          <a href="tel: +91-98853-23728">
+          <FaPhoneAlt className="text-white text-2xl m-2" /> 
           </a>
         </div>
       </motion.div>

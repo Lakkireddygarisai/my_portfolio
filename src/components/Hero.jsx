@@ -14,13 +14,13 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div className="mb-2">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Sai Ram</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mt-2  mb-3 text-white-100`}>
+          I am a Full Stack Web stack developer with excellent Problem Solving Skills and ability to perform well in a team. Passionate about Coding and enjoy building Web Applications. <br className='sm:block hidden' />
+            
           </p>
         </div>
       </div>
