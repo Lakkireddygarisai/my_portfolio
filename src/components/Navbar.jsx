@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import Sairam from "../PDF/Sairam.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,16 +25,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
- const handleResumeDownload = () => {
-    // Use the `import.meta.env` object to get the public URL of the file
-    const fileUrl = import.meta.env.BASE_URL + Sairam;
-
-    // Create a link element and trigger the download
+  const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = fileUrl;
+    // Replace the placeholder URL with the actual URL or file path of the hosted Sairam file
+    link.href = "<Sairam_file_url>";
     link.download = "Sairam.pdf";
     link.click();
   };
+
   return (
     <nav
       className={`${
