@@ -26,12 +26,20 @@ const Navbar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-    const link = document.createElement("a");
-    // Replace the placeholder URL with the actual URL or file path of the hosted Sairam file
-    link.href = "../PDF/Sairam.pdf";
-    link.download = "Sairam.pdf";
-    link.click();
-  };
+  fetch(Sairam)
+    .then((response) => response.blob())
+    .then((blob) => {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Sairam.pdf";
+      link.click();
+    })
+    .catch((error) => {
+      console.error("Error downloading the file:", error);
+    });
+};
+
 
   return (
     <nav
