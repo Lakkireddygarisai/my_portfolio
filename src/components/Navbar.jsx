@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import resume from "../PDF/resume.pdf";
+import Sairam from "../PDF/Sairam.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -28,8 +28,8 @@ const Navbar = () => {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = resume;
-    link.download = "resume.pdf";
+    link.href = Sairam;
+    link.download = "Sairam.pdf";
     link.click();
   };
 
