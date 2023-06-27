@@ -33,7 +33,7 @@ const Navbar = () => {
     // Create a link element and trigger the download
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "Sairam.pdf";
+    link.download = "Sairam's Resume.pdf";
     link.click();
   };
 
