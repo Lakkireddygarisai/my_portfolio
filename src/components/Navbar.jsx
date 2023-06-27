@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import Sairam from "../PDF/Sairam.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -26,20 +27,11 @@ const Navbar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-  fetch(Sairam)
-    .then((response) => response.blob())
-    .then((blob) => {
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "Sairam.pdf";
-      link.click();
-    })
-    .catch((error) => {
-      console.error("Error downloading the file:", error);
-    });
-};
-
+    const link = document.createElement("a");
+    link.href = Sairam;
+    link.download = "Sairam.pdf";
+    link.click();
+  };
 
   return (
     <nav
