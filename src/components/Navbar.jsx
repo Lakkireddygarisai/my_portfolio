@@ -26,7 +26,7 @@ const Navbar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-    const resumeURL = "https://example.com/path/to/Sairam.pdf"; // Replace with the actual URL of the PDF file
+    const resumeURL = "https://drive.google.com/file/d/1OXEFycyca2HmZkOTd0VUtD-07KVF3yrA/view?usp=drive_link"; // Replace with the actual URL of the PDF file
     window.open(resumeURL, "_blank");
   };
 
