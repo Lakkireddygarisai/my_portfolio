@@ -28,7 +28,7 @@ const Navbar = () => {
   const handleResumeDownload = () => {
     const link = document.createElement("a");
     // Replace the placeholder URL with the actual URL or file path of the hosted Sairam file
-    link.href = "<Sairam_file_url>";
+    link.href = "../PDF/Sairam.pdf";
     link.download = "Sairam.pdf";
     link.click();
   };
