@@ -9,7 +9,7 @@ const Tech = () => {
   return (
     <div>
       <h2 className={`${styles.sectionHeadText} text-center`}>
-          Skils
+          Skills
         </h2>
     <div className='flex flex-row flex-wrap justify-center gap-10'>
       {technologies.map((technology) => (
