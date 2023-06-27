@@ -36,7 +36,6 @@ const Navbar = () => {
     link.download = "Sairam.pdf";
     link.click();
   };
-
   return (
     <nav
       className={`${
