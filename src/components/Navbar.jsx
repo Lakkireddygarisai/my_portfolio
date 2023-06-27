@@ -26,9 +26,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleResumeDownload = () => {
+ const handleResumeDownload = () => {
+    // Use the `import.meta.env` object to get the public URL of the file
+    const fileUrl = import.meta.env.BASE_URL + Sairam;
+
+    // Create a link element and trigger the download
     const link = document.createElement("a");
-    link.href = Sairam;
+    link.href = fileUrl;
     link.download = "Sairam.pdf";
     link.click();
   };
