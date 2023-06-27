@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import Sairam from "../PDF/Sairam.pdf";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,14 +26,8 @@ const Navbar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-    // Use the `import.meta.env` object to get the public URL of the file
-    const fileUrl = import.meta.env.BASE_URL + Sairam;
-
-    // Create a link element and trigger the download
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = "Sairam.pdf";
-    link.click();
+    const resumeURL = "https://example.com/path/to/Sairam.pdf"; // Replace with the actual URL of the PDF file
+    window.open(resumeURL, "_blank");
   };
 
   return (
