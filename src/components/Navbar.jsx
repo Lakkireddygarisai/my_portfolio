@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   const handleResumeDownload = () => {
-    const resumeURL = "https://drive.google.com/file/d/1OXEFycyca2HmZkOTd0VUtD-07KVF3yrA/view?usp=drive_link"; // Replace with the actual URL of the PDF file
+    const resumeURL = "https://drive.google.com/file/d/1VplilKdYJuI71Fm7LlPOs-XR0_JUWTRB/view?usp=sharing"; // Replace with the actual URL of the PDF file
     window.open(resumeURL, "_blank");
   };
 
@@ -48,9 +49,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             Sairam &nbsp;
-            <span className="sm:block hidden"> | Full Stack Developer</span>
+            <span className='sm:block hidden'> | Cyber Security Engineer</span>
           </p>
         </Link>
 

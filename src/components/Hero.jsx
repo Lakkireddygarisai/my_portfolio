@@ -19,7 +19,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Sai Ram</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2  mb-3 text-white-100`}>
-          I am a Full Stack Web stack developer with excellent Problem Solving Skills and ability to perform well in a team. Passionate about Coding and enjoy building Web Applications. <br className='sm:block hidden' />
+          Cybersecurity Engineer specializing in SIEM, SOAR automation,<br className='sm:block hidden' />
+             and Python-based security integrations to enhance threat detection and incident response. 
             
           </p>
         </div>
