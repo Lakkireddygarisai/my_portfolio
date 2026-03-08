@@ -61,7 +61,7 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "SIEM",
     icon: html,
   },
   {
