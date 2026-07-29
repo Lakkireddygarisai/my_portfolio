@@ -149,9 +149,9 @@ const experiences = [
     date: "July 2026 - Present",
     points: [
       "Owned the end-to-end engineering lifecycle of enterprise security solutions on Google SecOps (Chronicle SIEM & SOAR) and CrowdStrike NG-SIEM, from log source onboarding, parser development, normalization, and enrichment to detection engineering, dashboards, SOAR automation, and incident response.",
-      "Architected and developed scalable Python-based custom integrations, log connectors, API orchestration, and automation frameworks with secure authentication, secrets management, encryption, observability, and fault-tolerant design for enterprise SOC environments."
-      "Designed and implemented detection rules, correlation logic, threat hunting queries, security dashboards, alert enrichment workflows, and automated response playbooks to improve detection fidelity, reduce MTTR, and enhance SOC operational efficiency."
-      "Provided technical leadership by defining integration standards, mentoring engineers, conducting architecture and code reviews, collaborating with SOC, Detection Engineering, Threat Intelligence, and Incident Response teams, and driving the delivery of secure, production-ready security solutions."
+      "Architected and developed scalable Python-based custom integrations, log connectors, API orchestration, and automation frameworks with secure authentication, secrets management, encryption, observability, and fault-tolerant design for enterprise SOC environments.",
+      "Designed and implemented detection rules, correlation logic, threat hunting queries, security dashboards, alert enrichment workflows, and automated response playbooks to improve detection fidelity, reduce MTTR, and enhance SOC operational efficiency.",
+      "Provided technical leadership by defining integration standards, mentoring engineers, conducting architecture and code reviews, collaborating with SOC, Detection Engineering, Threat Intelligence, and Incident Response teams, and driving the delivery of secure, production-ready security solutions.",
     ],
   },
 ];
