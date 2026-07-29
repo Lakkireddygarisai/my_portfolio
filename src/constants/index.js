@@ -133,12 +133,25 @@ const experiences = [
     company_name: "Tecplix",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "August 2025 - Ongoing",
+    date: "August 2025 - July 2026",
     points: [
       "Built advanced security automation and custom integrations on Google SecOps (Chronicle SIEM & SOAR) and CrowdStrike NG-SIEM using Python to streamline SOC operations.",
       "Designed scalable log ingestion pipelines and API-driven integrations to enrich alerts, automate incident response, and improve threat detection accuracy across cloud and SaaS platforms.",
       "Developed custom log ingestion frameworks to parse and normalize high-volume security logs from multiple SaaS and cloud platforms, enabling efficient threat monitoring and investigation.",
       "Engineered automated alert enrichment and response workflows that reduced manual SOC effort and accelerated incident investigation and remediation processes.",
+    ],
+  },
+  {
+    title: "Senior Security Integration Developer",
+    company_name: "Tecplix",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "July 2026 - Present",
+    points: [
+      "Owned the end-to-end engineering lifecycle of enterprise security solutions on Google SecOps (Chronicle SIEM & SOAR) and CrowdStrike NG-SIEM, from log source onboarding, parser development, normalization, and enrichment to detection engineering, dashboards, SOAR automation, and incident response.",
+      "Architected and developed scalable Python-based custom integrations, log connectors, API orchestration, and automation frameworks with secure authentication, secrets management, encryption, observability, and fault-tolerant design for enterprise SOC environments."
+      "Designed and implemented detection rules, correlation logic, threat hunting queries, security dashboards, alert enrichment workflows, and automated response playbooks to improve detection fidelity, reduce MTTR, and enhance SOC operational efficiency."
+      "Provided technical leadership by defining integration standards, mentoring engineers, conducting architecture and code reviews, collaborating with SOC, Detection Engineering, Threat Intelligence, and Incident Response teams, and driving the delivery of secure, production-ready security solutions."
     ],
   },
 ];
